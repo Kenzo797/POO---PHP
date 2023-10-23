@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Formulário</title>
+    
+</head>
+<body align="center">
+    
+        <form enctype="multipart/form-data" method="post" action="index.php?class=PessoaForm&method=save">
+           <label>Id</label>
+           <input name="id" readonly="1" type="text" style="width: 25%" value="{id}"><br>
+           <label>Nome: </label>
+           <input name="nome" type="text" style="width: 25%" value="{nome}" required><br>
+           <label>Endereço: </label>
+           <input name="endereco" type="text" style="width: 25%" value="{endereco}" required><br>
+           <label>Bairro: </label>
+           <input name="bairro" type="text" style="width: 25%" value="{bairro}" required><br>
+           <label>Telefone: </label>
+           <input name="tel" type="text" style="width: 25%" value="{tel}" required> <br>
+           <label>Email: </label>
+           <input name="email" type="text" style="width: 25%" value="{email}" required><br>
+
+            <input type="submit" action="index.php?class=PessoaForm&method=save">
+            <input type="button" onclick="window.location='index.php?class=PessoaList'" value="Voltar">
+        </form>
+    
+</body>
+</html>

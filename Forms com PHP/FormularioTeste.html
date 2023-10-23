@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+
+<h1>Formulário</h1>
+<body>
+  
+        <form action="ExibirDados.php" class="Formulário" method="post">
+
+            
+        
+        <fieldset>
+    
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required/>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required/>
+            <label for="nascimento">Data de nascimento</label>
+            <input type="date" name="nascimento" id="nascimento" required/>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" required></textarea>
+
+            <button type="submit" name="acao">Enviar</button>
+
+        </fieldset>
+
+        </form>
+   
+</body>
+</html>
